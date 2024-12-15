@@ -12,19 +12,7 @@ function Navbar() {
             type="text"
             name="search"
           />
-          <button className="h-8 text-white">Descobrir</button>
-          {/* <button className="h-8 text-slate-400 hover:text-white">
-            Navegar
-          </button>
-          <button className="h-8 text-slate-400 hover:text-white">
-            Novidades
-          </button> */}
         </div>
-        {/* <div className="flex gap-x-2">
-          <button>
-            <ShoppingCart />
-          </button>
-        </div> */}
       </div>
     </nav>
   );
