@@ -1,4 +1,5 @@
-# Projeto de Consumo da API Disney (Em Desenvolvimento!!!)
+# Projeto de Consumo de API Disney 
+(Em Desenvolvimento!!!)
 
 Este projeto foi desenvolvido com o objetivo de aprendizado e prática de desenvolvimento em React, realizando o consumo da API pública [Disney API](https://disneyapi.dev/).
 
