@@ -1,6 +1,18 @@
-// import { ShoppingCart } from "lucide-react";
+import { useState } from "react";
 
-function Navbar() {
+function Navbar({ onSearch }) {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearchSubmit = (event) => {
+    if (event.key === "Enter") {
+      onSearch(searchTerm); // Chamar a função passada por `props`
+    }
+  };
+
   return (
     <nav className="mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-white gap-x-8">
@@ -11,6 +23,9 @@ function Navbar() {
             placeholder="Buscar..."
             type="text"
             name="search"
+            value={searchTerm}
+            onChange={handleSearchChange}
+            onKeyDown={handleSearchSubmit}
           />
         </div>
       </div>
