@@ -60,11 +60,6 @@ Este projeto é de uso livre para fins educacionais.
 ## TODO
 
 - Melhorar a responsividade do layout
-- Corrigir exibição do background
 - Implementar paginação
 - Implementar exibição de detalhes do personagem
 - Implementar busca de personagens por filtros específicos
-- Melhorar a organização do código e a reutilização de componentes
-- Adicionar useStates para gerenciar a busca de personagens
-- Função de busca de personagens está sendo chamada em locais diferentes, melhorar a organização para utilizar em um único local
-- Adicionar tela de carregamento
