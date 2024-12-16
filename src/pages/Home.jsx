@@ -6,6 +6,13 @@ import SearchText from "../components/SearchText";
 function Home() {
   const [caracters, setCaracters] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [pagination, setPagination] = useState([
+    {
+      totalPages: null,
+      currentPage: null,
+      pageSize: 15,
+    },
+  ]);
 
   const fetchCaracters = async (searchTerm = "") => {
     setLoading(true);
@@ -20,6 +27,7 @@ function Home() {
       if (!response.ok) throw new Error("Failed to fetch characters");
       const data = await response.json();
       setCaracters(data.data);
+      setPagination([{ totalPages: data.info.totalPages }]);
     } catch (error) {
       console.error(error);
     } finally {
